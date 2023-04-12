@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to right, rgb(112 112 112) 1%, #b7b0b0 40%,#c6dbdb 60% , rgb(233 233 233) 100%);
+    color: white;
+}
+.container{
+    margin: 30px auto 20px ;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+.startBtn{
+    width: 30%;
+    margin-bottom: 10px;
+    height: 50px;
+    background-color: #83ece7;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.gnrMemes{
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+.gallery_img {
+    width: 200px;
+}
+
+/*.uploadBtn{*/
+/*    width: 200px;*/
+/*    height: 100px;*/
+/*    position: static;*/
+/*    margin: 0 auto;*/
+/*    display: block;*/
+/*    cursor: pointer;*/
+/*}*/
+#image{
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    margin-bottom: 10px;
+    right: 30px;
+}
+.inpFile{
+}
+.label {
+    align-items: center;
+    color: #31343e;
+    font-family: Raleway,sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 1;
+    color: aqua;
+}
+.label2{
+    font-family: Raleway,sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    float: top;
+
+    font-size: 15px;
+    line-height: 1;
+    color: aqua;
+}
+.inpFile{
+    /*width: 20px;*/
+    /*height: 20px;*/
+    display: block;
+    cursor: pointer;
+}
+.headerLogo{
+    align-items: center;
+    display: flex;
+    width: 100%;
+    height: 100px;
+    border-width: 10px;
+    background-color: #161615   ;
+}
+.logo{
+    width: 110px;
+    height: 100px;
+}
+.input{
+    display: flex;
+    width: calc(100% - 30px);
+    height: 30px;
+    float: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    overflow:auto;
+}
+.btn{
+    background: url("http://cdn.onlinewebfonts.com/svg/img_373333.png");
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    float: right;
+
+    background-color: #83ece7;
+}
+.sign_in{
+    width: 250px;
+    height: 35px;
+    float: right;
+    border-radius: 10px;
+    background-color: aqua;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.sign_up{
+    width: 250px;
+    height: 35px;
+    float: right;
+    border-radius: 10px;
+    background-color: aqua;
+    cursor: pointer ;
+    margin-top: 10px;
+}
+.div_block{
+    width: 650px;
+}
