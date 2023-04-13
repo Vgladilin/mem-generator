@@ -12,7 +12,7 @@
 </head>
 <body>
 <header class="headerLogo">
-    <img class="logo" src="assets/high-quality-picardia-595fecb044a02-overlay.png">
+    <a href="index.html"><img class="logo" src="assets/high-quality-picardia-595fecb044a02-overlay.png"></a>
     <div>
         <label class="label">Meme Generator</label>
         <label class="label2">Choose meme and get start!</label>
@@ -20,31 +20,29 @@
     <div class="div_block">
     </div>
 </header>
+<div class="block_row">
 <div class="changeImg">
-    <span id="imageName">ИМЯ ФАЙЛА</span>
-    <img class="changeMemes" src="assets/5089764.png">
-</div>
-<div class="txtBlock">
-    <input class="goToChange" id="inp" name="inp" placeholder="">
-    <label class="txt">Введите текст</label>
+    <span id="imageName" style="font-size: 30px">ИМЯ ФАЙЛА</span>
+    <img class="changeMemes" src="assets/5089764.png" id="imageContentBefore">
+    <input class="goToChange" id="inp" name="inp" placeholder="Введите текст для мема">
     <div class="createBtn">
-    <button class="btn2">Create</button>
+    <button class="btn2" onclick="createMeme()">Create</button>
     </div>
 </div>
-<div class="succesImg">
-    <img src="assets/5089764.png">
+<div class="successImg">
+    <img width="400" src="assets/5089764.png" id="imageContentAfter">
     <div class="downloadBtn">
         <button class="download">Download</button>
     </div>
 </div>
-<!--    <span id="imageName">ИМЯ ФАЙЛА</span>-->
+</div>
 
-<!--    <img src="./assets/5089764.png" width="100px" height="100px" id="imageContentBefore" alt="">-->
 
 <!--    <input id="imageCaption" value="" placeholder="введите описание картинки...">-->
 <!--    <div onclick="alert('AAAA')" style="background-color: #83ece7; padding: 10px"><span>Create meme</span></div>-->
 
 <!--    <img src="./assets/5089764.png" width="100px" height="100px" id="imageContentAfter" alt="">-->
 </body>
+<script src="scripts/global.js"></script>
 <script src="scripts/memePage.js"></script>
 </html>
