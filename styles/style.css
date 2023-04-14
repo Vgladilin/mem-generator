@@ -173,3 +173,21 @@ body{
 .successImg{
     margin-top: 10px;
 }
+.howToDownload{
+    font-family: Raleway,sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    float: top;
+    font-size: 15px;
+    line-height: 1;
+    color: aqua;
+}
+.howToDownload2{
+    font-family: Raleway,sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    float: top;
+    font-size: 15px;
+    line-height: 1;
+    color: aqua;
+}
