@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ru">
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -10,33 +10,45 @@
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"
             integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
 </head>
-<header class="headerLogo">
-    <img class="logo" src="assets/high-quality-picardia-595fecb044a02-overlay.png">
-    <div>
+
+
+<body>
+<header class="header">
+    <div class="header_logo">
+        <img class="logo" src="assets/high-quality-picardia-595fecb044a02-overlay.png">
+        <div class="header_logo-info">
         <label class="label">Meme Generator</label>
         <label class="label2">Choose meme and get start!</label>
+        </div>
     </div>
     <div class="div_block">
-        <div>
-            <input class="input" id="inp" name="inp" placeholder="Search...">
+        <div class="div_block2">
+            <div class="div_block_row">
+            <input class="input" id="inp" name="inp" oninput="search(this.value)" placeholder="Search...">
             <button class="btn"></button>
+            </div>
+            <div class="div_block_row">
+            <button class="sign_in">Sign in</button>
+            <button class="sign_up">Sign up</button>
+            </div>
+<!--            <div class="btnInst">-->
+<!--                <a href="">-->
+<!--                    <button class="inst"></button>-->
+<!--                </a>-->
+<!--            </div>-->
         </div>
-        <button class="sign_in">Sign in</button>
-        <button class="sign_up">Sign up</button>
     </div>
-
 </header>
-<!--<div class="container">-->
-<!--    <div onclick="textBox()"><span>Click me</span></div>-->
-<!--    <button class="uploadBtn">Upload image</button>-->
 
-<!--</div>-->
-<body>
 <div class="gnrMemes" id="images">
+<!--    <span id="imageName" style="font-size: 30px">ИМЯ ФАЙЛА</span>-->
 <!--    <a href="meme.html?meme=Adolf_Hitler&maxtextbox=1">-->
 <!--        <img class="gallery_img" src="assets/5089764.png">-->
 <!--    </a>-->
 </div>
+
+</div>
+
 <script src="https://cdn.jsdelivr.net/npm/js-base64@3.7.5/base64.min.js"></script>
 <script src="scripts/global.js"></script>
 <script src="scripts/script.js"></script>

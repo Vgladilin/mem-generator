@@ -279,10 +279,11 @@
 
 function renderImagesList(data) {
     let wrapper = document.querySelector('#images')
+    wrapper.innerHTML = ''
     let counter = 0
     for (let item in data) {
-        console.log(counter)
-        if (counter===10) break
+        // console.log(counter)
+        if (counter === 5) break
         let imgName = item,
             maxBoxes = data[item],
             imgItem = document.createElement('a')
@@ -296,13 +297,14 @@ function renderImagesList(data) {
     }
     document.querySelectorAll('#images .gallery_img').forEach(img => {
         let imgName = img.getAttribute('data-image')
-        console.log(imgName)
+        // console.log(imgName)
         setTimeout(function () {
             getImage(imgName, img)
-        }, 1000)
+        }, 5000)
 
     })
 }
+
 function getImagesNames() {
     $.ajax({
         "async": true,
@@ -320,6 +322,35 @@ function getImagesNames() {
             console.log(err)
         }
     })
+}
+
+let timer
+
+function search(value = '') {
+
+    if (value.length > 2) {
+        if (timer) {
+            clearTimeout(timer);
+        }
+        timer = setTimeout(function () {
+            const settings = {
+                "async": true,
+                "crossDomain": true,
+                "url": "https://meme-generator-and-template-database.p.rapidapi.com/search?searchString=" + value,
+                "method": "GET",
+                "headers": {
+                    "X-RapidAPI-Key": "092130daefmshd3cbdecb745d106p11bda4jsna8a6619bc6dc",
+                    "X-RapidAPI-Host": "meme-generator-and-template-database.p.rapidapi.com"
+                }
+            };
+
+            $.ajax(settings).done(function (response) {
+                renderImagesList(response)
+            });
+        }, 1000);
+    } else {
+        getImagesNames()
+    }
 }
 
 /* /js */

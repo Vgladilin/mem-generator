@@ -77,13 +77,22 @@ body{
     display: block;
     cursor: pointer;
 }
-.headerLogo{
+.header{
     align-items: center;
     display: flex;
+    justify-content: space-between;
     width: 100%;
     height: 100px;
     border-width: 10px;
     background-color: #161615   ;
+}
+.header_logo{
+    display: flex;
+    justify-content: space-between;
+    /*margin: 40px 10px;*/
+}
+.header_logo-info{
+    margin:auto 0;
 }
 .logo{
     width: 110px;
@@ -93,7 +102,6 @@ body{
     display: flex;
     width: calc(100% - 30px);
     height: 30px;
-    float: right;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
     overflow:auto;
@@ -126,7 +134,9 @@ body{
     margin-top: 10px;
 }
 .div_block{
-    width: 650px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 .changeMemes{
     width: 250px;
@@ -190,4 +200,32 @@ body{
     font-size: 15px;
     line-height: 1;
     color: aqua;
+}
+.inst{
+    width: 50px;
+    height: 50px;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 16px;
+    justify-content: space-around;
+    bottom: 100px;
+    border-radius: 91px;
+    background: #e0e0e0;
+    background: url("https://images.vexels.com/media/users/3/137380/isolated/preview/1b2ca367caa7eff8b45c09ec09b44c16-instagram-icon-logo.png");
+    background-size: cover;
+    cursor: pointer;
+}
+.div_block2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.div_block_row{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
