@@ -323,7 +323,6 @@ function getImagesNames() {
         }
     })
 }
-
 let timer
 
 function search(value = '') {
@@ -347,7 +346,7 @@ function search(value = '') {
             $.ajax(settings).done(function (response) {
                 renderImagesList(response)
             });
-        }, 1000);
+        }, 2000);
     } else {
         getImagesNames()
     }

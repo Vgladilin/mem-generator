@@ -30,7 +30,6 @@ function createMeme() {
     )
 
 }
-
 $(document).ready(function () {
     setData()
 })
